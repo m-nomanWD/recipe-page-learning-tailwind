@@ -26,4 +26,7 @@
   .ins li {
     @apply before:text-nutmeg before:font-bold;
   }
+  .ins .dynamic-list-item::before {
+    content: attr(data-index) '. ';
+  }
 }
